@@ -1,0 +1,115 @@
+.box {
+  position: relative;
+  padding-top: 50px;
+  margin-bottom: 80px;
+}
+
+.box__backround {
+  position: absolute;
+  top: 0;
+  right: calc(50% - 741px);
+  z-index: -5;
+  width: 1480px;
+  height: 703px;
+  background-image: url("../images/box-bgi.png");
+  background-size: 1480px 703px;
+  background-repeat: no-repeat;
+  background-color: #C99B67;
+  background-blend-mode: overlay;
+}
+
+.box__top {
+  margin-bottom: 80px;
+}
+
+.box__title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.box__text {
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF;
+  opacity: 0.8;
+  width: 581px;
+}
+
+.box__list {
+  position: relative;
+  display: flex;
+  list-style-type: none;
+  
+  
+  &::before {
+    position: absolute;
+    top: calc(50% - 364px);
+    left: calc(50% - 720px);
+    width: 140px;
+    height: 144px;
+    background-image: url("../images/box-bgi-group.png");
+    background-size: 140px 144px;
+    background-repeat: no-repeat;
+    content: "";
+  }
+}
+
+
+.box__item {
+  margin-right: 20px;
+}
+
+.box__item:nth-child(3) {
+  margin-right: 0;
+}
+
+.box__item-inner {
+  width: 377px;
+}
+
+.box__item-inner--active {
+  width: 334px;
+}
+
+.box__item-img {
+  margin-bottom: 28px;
+}
+
+.box__item-title {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.box__item-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #333333;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .box__backround {
+    background-image: url("../images/box-bgi@2x.png");
+  }
+
+  .box__list::before {
+    background-image: url("../images/box-bgi-group@2x.png");
+  }
+} 

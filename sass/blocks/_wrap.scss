@@ -1,0 +1,128 @@
+.wrap {
+  padding-right: 20px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+}
+
+.wrapper {
+  position: relative;
+  padding-top: 50px;
+  background-image: url("../images/wrap-bgi.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #0A775F;
+  background-blend-mode: overlay;
+
+  &::before {
+    position: absolute;
+    top: calc(50% - 300px);
+    right: calc(50% - 680px);
+    width: 192px;
+    height: 129px;
+    background-image: url("../images/wrapper-before.png");
+    background-size: 192px 129px;
+    background-repeat: no-repeat;
+    content: "";
+  }
+}
+
+
+.wrapper__title {
+  margin-bottom: 80px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.wrapper__box {
+  margin-bottom: 20px;
+  background-image: url("../images/wrap-lines.svg");
+  background-position: calc(50% - 147px);
+  background-repeat: no-repeat;
+}
+
+.wrapper__span {
+  display: inline-block;
+  margin-right: 393px;
+  width: 60px;
+  height: 60px;
+  background-color: #F8F8F2;
+  border: 4px solid #C99B67;
+}
+
+.wrapper__box > .wrapper__span:last-child {
+  margin-right: 0;
+}
+
+.wrapper__list {
+  display: flex;
+  margin-bottom: 60px;
+  list-style: none;
+}
+
+.wrapper__item {
+  position: relative;
+  margin-right: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  width: 433px;
+  background-color: #F8F8F2;
+}
+
+.wrapper__item:nth-child(3) {
+  margin-right: 0; 
+}
+
+.wrapper__info {
+  width: 385px;
+}
+
+.wrapper__info-span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 75px;
+  color: #333333;
+  opacity: 0.8;
+}
+
+.wrapper__subtitle {
+  margin-top: 140px;
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  color: #333333;
+}
+
+.wrapper__subtext {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #333333;
+}
+
+.wrapper__link-box {
+  text-align: center;
+}
+
+.wrapper__link {
+  display: inline-block;
+  margin-bottom: 50px;
+  padding: 16px 24px;
+  background-color: #C99B67;
+  border-radius: 100px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
